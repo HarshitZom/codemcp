@@ -88,7 +88,7 @@ async def read_file_content(
     numbered_lines = []
     for i, line in enumerate(processed_lines):
         line_num = line_offset + i + 1  # 1-indexed line number
-        numbered_lines.append(f"{line_num:6}\t{line.rstrip()}")
+        numbered_lines.append(f"{line_num:6}:{line.rstrip()}")
 
     content = "\n".join(numbered_lines)
 
